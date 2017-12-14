@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>통합도서관</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="image/logo.png" type="image/x-icon">
+</head>
+<style>
+#divHeader{
+	position: relative;
+	z-index: 999;
+}
+.header{
+	margin: 0 auto;
+	padding: 10px 0;
+}
+#divTopMenu{
+	position: relative;
+	height: 40px;
+	font-size: 15px;
+	font-weight: 600;
+	z-index:1000;
+}
+#divInnerTopMenu{
+	position: relative;
+	
+}
+
+#divContents{
+	position: relative;
+	width: 970px;
+	padding: 40px 0 0 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+html { 
+	background: url(image/bgImg2.png) 
+				no-repeat center center fixed;
+			 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover; 
+}
+
+
+</style>
+<script>
+
+</script>
+<body>
+	<div id="divWrapper">
+		<div id="divHeader">
+			<div class="header">
+				<p class="logo">
+					<a href="/IntegrityLibraryProject">
+						<img src="image/logo.png" alt="통합도서관" width="80px" height="80px">
+					</a>
+				</p>
+			</div>
+			<div id="divTopMenu" >
+				<div id="divInnerTopMenu" class="w3-bar w3-border w3-light-grey">
+  					<a href="#" class="w3-bar-item w3-button">자료검색</a>
+  					<a href="#" class="w3-bar-item w3-button">도서관 안내</a>
+  					<a href="#" class="w3-bar-item w3-button">My Page</a>
+				</div>
+
+			</div>
+		</div>
+		<div id="divContents">
+			<div id="divSearch">
+				<input id="search" size="80">
+				<button>검색</button>
+				<button>상세검색</button>
+			</div>
+			<div class="content1">
+				<div id="leftSideMenu" class="w3-bar-block w3-light-grey" style="width:160px">
+					<a href="#" class="w3-bar-item w3-button">대출 조회 및 연기</a>
+			  		<a href="jsp/inquireReserve" class="w3-bar-item w3-button">대출 예약 조회</a>
+			  		<a href="#" class="w3-bar-item w3-button">도서 대출 베스트</a>
+				</div>
+				<br>
+			</div>
+			<div class="content2">	
+				<div id="mainImage" style="vertical-align:middle">
+					<p class="mainImage">
+						<img src="image/visual1.jpg" alt="메인 이미지" width="450px" height="300px">
+					</p>
+				</div>
+			</div>
+			<div class="content3">
+				<div id="myInfo">
+					<h2>내 정보</h2>
+					<div id="upMenu">
+						<span class="userInfo"><span>
+						<a href="/login" class="logBtn">로그인</a>
+						<a href="jsp/certificate.jsp">회원가입</a>
+						</span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content4">
+				<div id="total">
+					<h2>Total Best Book</h2>
+				</div>
+			</div>
+			<div class="content5">		
+				<div id="newBook">
+					<h2>신간 도서</h2>
+				</div>
+			</div>
+			<div class="content6">
+				<div>		
+					<a href="http://www.riss.kr/index.do" target="_blank" title="새창"><img src="image/riss.gif" alt="RISS KERIS 학술정보서비스"></a>				
+					<a href="http://www.ndsl.kr/index.do" target="_blank" title="새창"><img src="image/ndsl.gif" alt="NDSL 국가과학기술전저도서관"></a>
+					<a href="http://www.nl.go.kr/" target="_blank" title="새창"><img src="image/nl.gif" alt="국립중앙도서관"></a>				
+					<a href="http://www.nanet.go.kr" target="_blank" title="새창"><img src="image/nanet.gif" alt="국회도서관"></a>					
+					<a href="http://www.dlibrary.go.kr/" target="_blank" title="새창"><img src="image/ndl.gif" alt="국가전자도서관"></a>				
+				</div>
+			</div>
+			<div>
+				<br><br><br>
+			</div>
+		</div>				
+	</div>
+</body>
+</html>
